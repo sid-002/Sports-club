@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Chennai Sports Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: navy;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            margin-top: 70px;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: orange;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background: darkorange;
+        }
+        .highlight-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .highlight {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .highlight img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about-section {
+            background: url('images/about_bg.jpg') no-repeat center center/cover;
+            color: black;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .about-section h2 {
+            color: yellow;
+            font-size: 42px;
+        }
+        .about-section p {
+            font-size: 30px;
+            line-height: 1.6;
+            color: black;
+        }
+        .contact-section {
+            background: white;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .contact-section h2 {
+            color: navy;
+            font-size: 42px;
+        }
+        .contact-section p {
+            font-size: 30px;
+            line-height: 1.6;
+        }
+        #scrollTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: navy;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .sports-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sport {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .sport img {
+            width: 100%;
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: orange;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="VIT Chennai Sports Club Logo">
+        </div>
+        <h1>VIT Chennai Sports Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="images/sports_banner.avif" alt="Sports Club Banner">
+        <div class="hero-text">
+            <h2>Experience the Thrill of Sports</h2>
+            <p>Join VIT Chennai's most exciting sports community and take part in various tournaments, events, and training programs.</p>
+            <a href="events.php" class="btn">Join an Event</a>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <h2>Why Join Us?</h2>
+        <div class="highlight-container">
+            <div class="highlight">
+                <img src="images/teamwork.jpg" alt="Teamwork" style="height: 500px; width: 500px;">
+                <h3>Team Spirit</h3>
+                <p>Build friendships and team spirit through competitive sports.</p>
+            </div>
+            <div class="highlight">
+                <img src="images/training.jpg" alt="Training" style="height: 500px; width: 500px;">
+                <h3>Professional Training</h3>
+                <p>Get trained by expert coaches and improve your skills.</p>
+            </div>
+            <div class="highlight">
+                <img src="images/trophy.png" alt="Trophy" style="height: 500px; width: 500px;">
+                <h3>Exciting Tournaments</h3>
+                <p>Participate in inter-college and national-level competitions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>🏆 Welcome to VIT Chennai Sports Club!</h2>
+        <p>At <strong>VIT Chennai Sports Club</strong>, we believe that sports are not just about competition but about <strong>passion, teamwork, discipline, and self-improvement</strong>. Whether you're a seasoned athlete or just starting, our club provides a <strong>platform</strong> for you to enhance your skills, compete in tournaments, and build lifelong friendships.</p>
+    
+        <h3>🔥 Why Join Our Sports Club?</h3>
+        <ul>
+            <li>🏅 <strong>Professional Coaching</strong> – Train under experienced mentors and refine your techniques.</li>
+            <li>🏆 <strong>Competitive Spirit</strong> – Participate in <strong>inter-college, state, and national-level</strong> championships.</li>
+            <li>⚡ <strong>Top-Class Facilities</strong> – Access modern courts, fields, gyms, and training equipment.</li>
+            <li>🎯 <strong>Diverse Sports</strong> – Football, Basketball, Badminton, Cricket, Athletics, Table Tennis, and more!</li>
+            <li>💪 <strong>Fitness & Wellness</strong> – Stay active, build endurance, and boost mental toughness.</li>
+            <li>🤝 <strong>Networking & Growth</strong> – Meet like-minded sports enthusiasts and build a strong sports network.</li>
+        </ul>
+    
+        <h3>🎯 Our Mission & Vision</h3>
+        <p>🏅 <strong>Mission:</strong> To provide a <strong>dynamic and inclusive sports culture</strong> where students can develop their <strong>skills, leadership, and sportsmanship</strong>.</p>
+        <p>🌟 <strong>Vision:</strong> To establish <strong>VIT Chennai</strong> as a <strong>hub for sports excellence</strong>, fostering talent and promoting a <strong>healthy and active lifestyle</strong>.</p>
+    
+        <h3>🏅 Our Featured Sports</h3>
+        <div class="sports-container">
+            <div class="sport">
+                <img src="images/football.jpg" alt="Football">
+                <h4>⚽ Football</h4>
+                <p>Experience thrilling matches and intense competitions.</p>
+            </div>
+            <div class="sport">
+                <img src="images/basketball.jpg" alt="Basketball">
+                <h4>🏀 Basketball</h4>
+                <p>Shoot, dribble, and dunk your way to glory.</p>
+            </div>
+            <div class="sport">
+                <img src="images/cricket.jpeg" alt="Cricket">
+                <h4>🏏 Cricket</h4>
+                <p>Bat, bowl, and field like a pro in our tournaments.</p>
+            </div>
+            <div class="sport">
+                <img src="images/badminton.jpeg" alt="Badminton">
+                <h4>🏸 Badminton</h4>
+                <p>Fast-paced action on the court with top-class facilities.</p>
+            </div>
+            <div class="sport">
+                <img src="images/marathon.jpeg" alt="Athletics">
+                <h4>🏃‍♂️ Athletics</h4>
+                <p>Push your limits with track & field events.</p>
+            </div>
+        </div>
+    
+        <h3>🏆 Achievements & Tournaments</h3>
+        <ul>
+            <li>🔥 <strong>VIT Sports League</strong> – Our <strong>flagship inter-department tournament</strong> featuring multiple sports.</li>
+            <li>🏅 <strong>National & State-Level Championships</strong> – Our athletes have competed and won at <strong>top-level events</strong>.</li>
+            <li>🥇 <strong>Annual Sports Fest</strong> – A mega event filled with competitions, fun challenges, and fitness workshops.</li>
+        </ul>
+    
+        <h3>📅 Upcoming Events & Activities</h3>
+        <p>Stay tuned for our <strong>sports fest, workshops, inter-college matches, and fitness boot camps</strong>. Join us to experience the <strong>adrenaline rush</strong> and <strong>fun-filled sportsmanship</strong>.</p>
+    
+        <h3>📢 Become a Member Today!</h3>
+        <p>Whether you’re looking to <strong>compete</strong>, <strong>train</strong>, or just <strong>stay active</strong>, VIT Chennai Sports Club is the <strong>perfect place</strong> for you.</p>
+    </section>
+     
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: sportsclub@vitcc.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Near Delta Block , VIT Chennai</p>
+    </section>
+    
+    <button id="scrollTop" onclick="scrollToTop()">&#8679;</button>
+    
+    <script>
+        window.onscroll = function() {
+            let scrollTopButton = document.getElementById("scrollTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VIT Chennai Sports Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: navy;
+            padding: 15px 20px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .content h2 {
+            font-size: 36px;
+            color: yellow;
+        }
+        .about-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px white;
+        }
+        .about-box p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="VIT Chennai Sports Club Logo">
+        </div>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Welcome to VIT Chennai Sports Club</h2>
+        <div class="about-box">
+            <p>VIT Chennai Sports Club is dedicated to promoting fitness, teamwork, and sportsmanship among students. Our club offers a variety of sports activities, including football, basketball, cricket, badminton, and many more.</p>
+            <p>With professional coaching, state-of-the-art facilities, and exciting tournaments, we strive to create a vibrant and competitive sports culture on campus. Join us and become part of a winning team!</p>
+        </div>
+    </section>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+</html>
